@@ -2,7 +2,7 @@
 
 # API Reference
 
-Browse the latest API Reference for the HERE SDK for iOS (Navigate), Version 4.25.5.0.
+Browse the latest API Reference for the HERE SDK for iOS (Navigate), Version 4.24.5.0.
 
 For the terms and conditions covering this documentation, see the [HERE Documentation License](https://legal.here.com/en-gb/terms/documentation-license).
 
