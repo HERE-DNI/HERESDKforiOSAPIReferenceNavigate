@@ -2,7 +2,7 @@
   "warnings": [
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/core-types/swift/unity/swift/core-types_main_glue.swift",
-      "line": 2780,
+      "line": 2834,
       "symbol": "Point3D.init(x:y:z:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -23,7 +23,7 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/harp.sdk-bindings/swift/unity/swift/harp.sdk-bindings_main_glue.swift",
-      "line": 17662,
+      "line": 17612,
       "symbol": "MapSceneLights.Direction.init(azimuth:altitude:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -51,7 +51,7 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 14928,
+      "line": 15043,
       "symbol": "VehicleRestriction.init(restriction:hazmatRestriction:timeRestriction:appliesToDelivery:weather:truckCategory:trailerCount:axleCount:axleCountInGroup:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -72,21 +72,21 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5157,
+      "line": 5279,
       "symbol": "ChargingConnectorType.Key.rawValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5162,
+      "line": 5284,
       "symbol": "ChargingConnectorType.CodingError.unknownValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_search-common-bindings/swift/unity/swift/heresdk_search-common-bindings_main_glue.swift",
-      "line": 4108,
+      "line": 4169,
       "symbol": "Address.init(city:countryCode:country:district:subdistrict:houseNumOrName:postalCode:state:county:street:block:subBlock:addressText:type:stateCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -268,49 +268,35 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 7605,
-      "symbol": "VenueTransportMode.Key.rawValue",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 7610,
-      "symbol": "VenueTransportMode.CodingError.unknownValue",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8376,
+      "line": 8306,
       "symbol": "VenueService.Int32Array",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8378,
+      "line": 8308,
       "symbol": "VenueService.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8380,
+      "line": 8310,
       "symbol": "VenueService.VenueInfoList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8382,
+      "line": 8312,
       "symbol": "VenueService.VenueOptionalFeatureList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 10757,
+      "line": 10687,
       "symbol": "VenueStyle.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
@@ -352,28 +338,28 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 351,
+      "line": 370,
       "symbol": "MapView.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 355,
+      "line": 374,
       "symbol": "MapView.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 415,
+      "line": 434,
       "symbol": "MapView.init(frame:withSdkEngine:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 431,
+      "line": 450,
       "symbol": "MapView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
