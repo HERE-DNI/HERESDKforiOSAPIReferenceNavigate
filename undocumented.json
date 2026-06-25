@@ -2,7 +2,7 @@
   "warnings": [
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/core-types/swift/unity/swift/core-types_main_glue.swift",
-      "line": 2834,
+      "line": 3616,
       "symbol": "Point3D.init(x:y:z:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -23,42 +23,42 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/harp.sdk-bindings/swift/unity/swift/harp.sdk-bindings_main_glue.swift",
-      "line": 17612,
+      "line": 17587,
       "symbol": "MapSceneLights.Direction.init(azimuth:altitude:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 2446,
+      "line": 1662,
       "symbol": "ExternalID.init(source:id:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 4624,
+      "line": 3840,
       "symbol": "PolylineSimplifier.Options.init(maxPoints:simplificationToleranceInMeters:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 7782,
+      "line": 6998,
       "symbol": "EngineOptions.init(customBaseUrl:customAuthenticationMode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 15043,
+      "line": 14266,
       "symbol": "VehicleRestriction.init(restriction:hazmatRestriction:timeRestriction:appliesToDelivery:weather:truckCategory:trailerCount:axleCount:axleCountInGroup:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_mapview-harp-bindings/swift/unity/swift/heresdk_mapview-harp-bindings_main_glue.swift",
-      "line": 3588,
+      "line": 3587,
       "symbol": "PickMapContentResult.VehicleRestrictionResult.init(coordinates:countryCode:vehicleRestriction:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -86,7 +86,7 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_search-common-bindings/swift/unity/swift/heresdk_search-common-bindings_main_glue.swift",
-      "line": 4169,
+      "line": 4018,
       "symbol": "Address.init(city:countryCode:country:district:subdistrict:houseNumOrName:postalCode:state:county:street:block:subBlock:addressText:type:stateCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -268,35 +268,49 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8306,
+      "line": 7427,
+      "symbol": "IndoorRoutingError.Key.rawValue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
+      "line": 7432,
+      "symbol": "IndoorRoutingError.CodingError.unknownValue",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
+      "line": 8418,
       "symbol": "VenueService.Int32Array",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8308,
+      "line": 8420,
       "symbol": "VenueService.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8310,
+      "line": 8422,
       "symbol": "VenueService.VenueInfoList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8312,
+      "line": 8424,
       "symbol": "VenueService.VenueOptionalFeatureList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 10687,
+      "line": 10799,
       "symbol": "VenueStyle.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"

@@ -502,9 +502,6 @@
                 <a href="../Enums/HeadlightsRequirement.html">HeadlightsRequirement</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/LaneAttribute.html">LaneAttribute</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/LocalRoadCharacteristic.html">LocalRoadCharacteristic</a>
               </li>
               <li class="nav-group-task">
@@ -1492,6 +1489,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2995,10 +2998,24 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Gestures.html">Gestures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MapInteractionDelegate.html">MapInteractionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MapInteractionState.html">MapInteractionState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/MapInteractionState.html">MapInteractionState</a>
+                <a href="../Enums/EnableOption.html">EnableOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IndoorRouteNoticeCode.html">IndoorRouteNoticeCode</a>
               </li>
             </ul>
           </li>
@@ -3014,18 +3031,54 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <a href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/MapInteractionDelegate.html">MapInteractionDelegate</a>
+                <a href="../Structs/IndoorRouteNotice.html">IndoorRouteNotice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorRouteNoticeDetails.html">IndoorRouteNoticeDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RouteTag.html">RouteTag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueCarSpecification.html">VenueCarSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenuePedestrianSpecification.html">VenuePedestrianSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueScooterSpecification.html">VenueScooterSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTaxiSpecification.html">VenueTaxiSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/PedestrianBuilder.html">– PedestrianBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/CarBuilder.html">– CarBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/TaxiBuilder.html">– TaxiBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/ScooterBuilder.html">– ScooterBuilder</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Structs.html">Other Structures</a>
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk28IndoorRouteCompletionHandlera">IndoorRouteCompletionHandler</a>
               </li>
             </ul>
           </li>
@@ -3093,9 +3146,9 @@ utilized for indoor route calculation.</p>
                       <div class="abstract">
                         <p>The transport mode for route calculation.</p>
 
-<p><strong>Note:</strong> Indoor route sections of the resulting route will always be
+<p><strong>Note:</strong> Mode of transport for the resulting indoor route will by default be
 <code><a href="../Enums/VenueTransportMode.html#/s:7heresdk18VenueTransportModeO10pedestrianyA2CmF">VenueTransportMode.pedestrian</a></code> in the current implementation.
-This option will affect only outdoor route sections.</p>
+This option will affect only indoor route sections.</p>
 
                       </div>
                       <div class="declaration">
@@ -3103,6 +3156,40 @@ This option will affect only outdoor route sections.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">transportMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk18IndoorRouteOptionsV27venueTransportSpecificationAA05VenuefG0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/venueTransportSpecification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18IndoorRouteOptionsV27venueTransportSpecificationAA05VenuefG0Vvp">venueTransportSpecification</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines the venue transport specification which contains the vehicle specifications
+for the transport mode chosen via <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.
+<strong>Notes:</strong></p>
+
+<ul>
+<li>By default all vehicle specifications from <code>IndoorRouteOptions.venueTransportSpecification</code> are set to <code>nil</code>.</li>
+<li>The transport mode is determined by <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">venueTransportSpecification</span><span class="p">:</span> <span class="kt"><a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3160,7 +3247,8 @@ The default speed is 1 meter per second.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">speedInMetersPerSecond</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.28.0. Use `VenuePedestrianSpecification.walking_speed_in_meters_per_second` instead.")</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">speedInMetersPerSecond</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -3170,9 +3258,9 @@ The default speed is 1 meter per second.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode015indoorAvoidanceD022speedInMetersPerSecondAcA0cD0V_AA014VenueTransportG0OAA0biD0VSdtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(routeOptions:transportMode:indoorAvoidanceOptions:speedInMetersPerSecond:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode015indoorAvoidanceD022speedInMetersPerSecondAcA0cD0V_AA014VenueTransportG0OAA0biD0VSdtcfc">init(routeOptions:<wbr>transportMode:<wbr>indoorAvoidanceOptions:<wbr>speedInMetersPerSecond:<wbr>)</a>
+                    <a name="/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode27venueTransportSpecification015indoorAvoidanceD0AcA0cD0V_AA05VenueiG0OAA0miJ0VAA0blD0Vtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(routeOptions:transportMode:venueTransportSpecification:indoorAvoidanceOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode27venueTransportSpecification015indoorAvoidanceD0AcA0cD0V_AA05VenueiG0OAA0miJ0VAA0blD0Vtcfc">init(routeOptions:<wbr>transportMode:<wbr>venueTransportSpecification:<wbr>indoorAvoidanceOptions:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3196,11 +3284,78 @@ The default speed is 1 meter per second.</p>
 <li>transportMode: The transport mode for route calculation.</li>
 </ul>
 
-<p><strong>Note:</strong> Indoor route sections of the resulting route will always be
+<p><strong>Note:</strong> Mode of transport for the resulting indoor route will by default be
   <code><a href="../Enums/VenueTransportMode.html#/s:7heresdk18VenueTransportModeO10pedestrianyA2CmF">VenueTransportMode.pedestrian</a></code> in the current implementation.
-  This option will affect only outdoor route sections.</p>
+  This option will affect only indoor route sections.</p>
 
 <ul>
+<li>venueTransportSpecification: Defines the venue transport specification which contains the vehicle specifications
+for the transport mode chosen via <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.
+<strong>Notes:</strong>
+
+<ul>
+<li>By default all vehicle specifications from <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV27venueTransportSpecificationAA05VenuefG0Vvp">IndoorRouteOptions.venueTransportSpecification</a></code> are set to <code>nil</code>.</li>
+<li>The transport mode is determined by <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.</li>
+</ul></li>
+<li>indoorAvoidanceOptions: Options to specify restrictions for indoor route calculations. By default
+no restrictions are applied.</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">routeOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span><span class="p">(),</span> <span class="nv">transportMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span> <span class="o">=</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span><span class="o">.</span><span class="n">pedestrian</span><span class="p">,</span> <span class="nv">venueTransportSpecification</span><span class="p">:</span> <span class="kt"><a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a></span><span class="p">(),</span> <span class="nv">indoorAvoidanceOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode27venueTransportSpecification015indoorAvoidanceD022speedInMetersPerSecondAcA0cD0V_AA05VenueiG0OAA0riJ0VAA0blD0VSdtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(routeOptions:transportMode:venueTransportSpecification:indoorAvoidanceOptions:speedInMetersPerSecond:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode27venueTransportSpecification015indoorAvoidanceD022speedInMetersPerSecondAcA0cD0V_AA05VenueiG0OAA0riJ0VAA0blD0VSdtcfc">init(routeOptions:<wbr>transportMode:<wbr>venueTransportSpecification:<wbr>indoorAvoidanceOptions:<wbr>speedInMetersPerSecond:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an object and assign default values for route options.</p>
+
+<ul>
+<li><p>Parameters</p>
+
+<ul>
+<li>routeOptions: Specifies the common route calculation options.</li>
+</ul>
+
+<p><strong>Note:</strong> Currently, only <code><a href="../Structs/RouteOptions.html#/s:7heresdk12RouteOptionsV16optimizationModeAA012OptimizationE0Ovp">RouteOptions.optimizationMode</a></code> parameter is
+  utilized for indoor route calculation.</p>
+
+<ul>
+<li>transportMode: The transport mode for route calculation.</li>
+</ul>
+
+<p><strong>Note:</strong> Mode of transport for the resulting indoor route will by default be
+  <code><a href="../Enums/VenueTransportMode.html#/s:7heresdk18VenueTransportModeO10pedestrianyA2CmF">VenueTransportMode.pedestrian</a></code> in the current implementation.
+  This option will affect only indoor route sections.</p>
+
+<ul>
+<li>venueTransportSpecification: Defines the venue transport specification which contains the vehicle specifications
+for the transport mode chosen via <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.
+<strong>Notes:</strong>
+
+<ul>
+<li>By default all vehicle specifications from <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV27venueTransportSpecificationAA05VenuefG0Vvp">IndoorRouteOptions.venueTransportSpecification</a></code> are set to <code>nil</code>.</li>
+<li>The transport mode is determined by <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.</li>
+</ul></li>
 <li>indoorAvoidanceOptions: Options to specify restrictions for indoor route calculations. By default
 no restrictions are applied.</li>
 <li>speedInMetersPerSecond: Specifies the speed that will be used by the service as the speed
@@ -3215,7 +3370,8 @@ The default speed is 1 meter per second.</li>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">routeOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span><span class="p">(),</span> <span class="nv">transportMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span> <span class="o">=</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span><span class="o">.</span><span class="n">pedestrian</span><span class="p">,</span> <span class="nv">indoorAvoidanceOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span><span class="p">(),</span> <span class="nv">speedInMetersPerSecond</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated)</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">routeOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span><span class="p">(),</span> <span class="nv">transportMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span> <span class="o">=</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span><span class="o">.</span><span class="n">pedestrian</span><span class="p">,</span> <span class="nv">venueTransportSpecification</span><span class="p">:</span> <span class="kt"><a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a></span><span class="p">(),</span> <span class="nv">indoorAvoidanceOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span><span class="p">(),</span> <span class="nv">speedInMetersPerSecond</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3227,7 +3383,7 @@ The default speed is 1 meter per second.</li>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-03)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

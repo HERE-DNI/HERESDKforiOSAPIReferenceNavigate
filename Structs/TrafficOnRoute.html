@@ -502,9 +502,6 @@
                 <a href="../Enums/HeadlightsRequirement.html">HeadlightsRequirement</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/LaneAttribute.html">LaneAttribute</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/LocalRoadCharacteristic.html">LocalRoadCharacteristic</a>
               </li>
               <li class="nav-group-task">
@@ -1492,6 +1489,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2995,10 +2998,24 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Gestures.html">Gestures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MapInteractionDelegate.html">MapInteractionDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MapInteractionState.html">MapInteractionState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/MapInteractionState.html">MapInteractionState</a>
+                <a href="../Enums/EnableOption.html">EnableOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/IndoorRouteNoticeCode.html">IndoorRouteNoticeCode</a>
               </li>
             </ul>
           </li>
@@ -3014,18 +3031,54 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <a href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/MapInteractionDelegate.html">MapInteractionDelegate</a>
+                <a href="../Structs/IndoorRouteNotice.html">IndoorRouteNotice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorRouteNoticeDetails.html">IndoorRouteNoticeDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RouteTag.html">RouteTag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueCarSpecification.html">VenueCarSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenuePedestrianSpecification.html">VenuePedestrianSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueScooterSpecification.html">VenueScooterSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTaxiSpecification.html">VenueTaxiSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/PedestrianBuilder.html">– PedestrianBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/CarBuilder.html">– CarBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/TaxiBuilder.html">– TaxiBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VenueTransportSpecification/ScooterBuilder.html">– ScooterBuilder</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Structs.html">Other Structures</a>
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk28IndoorRouteCompletionHandlera">IndoorRouteCompletionHandler</a>
               </li>
             </ul>
           </li>
@@ -3049,6 +3102,34 @@ omitted.</p>
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk14TrafficOnRouteV8routeTagAA0dF0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/routeTag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk14TrafficOnRouteV8routeTagAA0dF0Vvp">routeTag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The unique identifier of the route this traffic information belongs to.
+<strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">routeTag</span><span class="p">:</span> <span class="kt"><a href="../Structs/RouteTag.html">RouteTag</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -3135,9 +3216,9 @@ traveled section index.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk14TrafficOnRouteV24lastTraveledSectionIndex016traveledDistancec4LastG8InMeters15trafficSectionsACs5Int32V_AHSayAA0bcG0VGtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(lastTraveledSectionIndex:traveledDistanceOnLastSectionInMeters:trafficSections:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk14TrafficOnRouteV24lastTraveledSectionIndex016traveledDistancec4LastG8InMeters15trafficSectionsACs5Int32V_AHSayAA0bcG0VGtcfc">init(lastTraveledSectionIndex:<wbr>traveledDistanceOnLastSectionInMeters:<wbr>trafficSections:<wbr>)</a>
+                    <a name="/s:7heresdk14TrafficOnRouteV8routeTag24lastTraveledSectionIndex016traveledDistancec4LastI8InMeters15trafficSectionsAcA0dF0V_s5Int32VAKSayAA0bcI0VGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(routeTag:lastTraveledSectionIndex:traveledDistanceOnLastSectionInMeters:trafficSections:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk14TrafficOnRouteV8routeTag24lastTraveledSectionIndex016traveledDistancec4LastI8InMeters15trafficSectionsAcA0dF0V_s5Int32VAKSayAA0bcI0VGtcfc">init(routeTag:<wbr>lastTraveledSectionIndex:<wbr>traveledDistanceOnLastSectionInMeters:<wbr>trafficSections:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3152,7 +3233,7 @@ traveled section index.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">lastTraveledSectionIndex</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">traveledDistanceOnLastSectionInMeters</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">trafficSections</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/TrafficOnSection.html">TrafficOnSection</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">routeTag</span><span class="p">:</span> <span class="kt"><a href="../Structs/RouteTag.html">RouteTag</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/RouteTag.html">RouteTag</a></span><span class="p">(),</span> <span class="nv">lastTraveledSectionIndex</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">traveledDistanceOnLastSectionInMeters</span><span class="p">:</span> <span class="kt">Int32</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">trafficSections</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/TrafficOnSection.html">TrafficOnSection</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
 
                         </div>
                       </div>
@@ -3164,7 +3245,7 @@ traveled section index.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-03)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-23)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
