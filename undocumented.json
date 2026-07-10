@@ -23,7 +23,7 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/harp.sdk-bindings/swift/unity/swift/harp.sdk-bindings_main_glue.swift",
-      "line": 17587,
+      "line": 17651,
       "symbol": "MapSceneLights.Direction.init(azimuth:altitude:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -58,7 +58,7 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_mapview-harp-bindings/swift/unity/swift/heresdk_mapview-harp-bindings_main_glue.swift",
-      "line": 3587,
+      "line": 3559,
       "symbol": "PickMapContentResult.VehicleRestrictionResult.init(coordinates:countryCode:vehicleRestriction:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -72,14 +72,14 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5279,
+      "line": 5340,
       "symbol": "ChargingConnectorType.Key.rawValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5284,
+      "line": 5345,
       "symbol": "ChargingConnectorType.CodingError.unknownValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -107,210 +107,210 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 1978,
+      "line": 2039,
       "symbol": "VenueInfoDataList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 2637,
+      "line": 2698,
       "symbol": "VenueMap.VenueInfoList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 5282,
+      "line": 5343,
       "symbol": "VenueDrawing.GeometryArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 5284,
+      "line": 5345,
       "symbol": "VenueDrawing.StringToPropertyMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 5286,
+      "line": 5347,
       "symbol": "VenueDrawing.LevelArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 5288,
+      "line": 5349,
       "symbol": "VenueDrawing.StringToGeometryArrayMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 5290,
+      "line": 5351,
       "symbol": "VenueDrawing.DoubleArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 5292,
+      "line": 5353,
       "symbol": "VenueDrawing.TopologyArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 5600,
+      "line": 5661,
       "symbol": "VenueGeometry.StringToPropertyMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6346,
+      "line": 6407,
       "symbol": "VenueLevel.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6348,
+      "line": 6409,
       "symbol": "VenueLevel.GeometryArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6350,
+      "line": 6411,
       "symbol": "VenueLevel.StringToPropertyMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6352,
+      "line": 6413,
       "symbol": "VenueLevel.StringToGeometryArrayMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6354,
+      "line": 6415,
       "symbol": "VenueLevel.TopologyArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6356,
+      "line": 6417,
       "symbol": "VenueLevel.CrosswalkArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6726,
+      "line": 6787,
       "symbol": "VenueModel.GeometryArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6728,
+      "line": 6789,
       "symbol": "VenueModel.StringToPropertyMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6730,
+      "line": 6791,
       "symbol": "VenueModel.StringToGeometryArrayMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6732,
+      "line": 6793,
       "symbol": "VenueModel.StringToStringArrayMap",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6734,
+      "line": 6795,
       "symbol": "VenueModel.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6736,
+      "line": 6797,
       "symbol": "VenueModel.DrawingArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 6738,
+      "line": 6799,
       "symbol": "VenueModel.TopologyArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 7017,
+      "line": 7078,
       "symbol": "VenueTopology.AccessCharacteristicsList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 7427,
+      "line": 7488,
       "symbol": "IndoorRoutingError.Key.rawValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 7432,
+      "line": 7493,
       "symbol": "IndoorRoutingError.CodingError.unknownValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8418,
+      "line": 8507,
       "symbol": "VenueService.Int32Array",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8420,
+      "line": 8509,
       "symbol": "VenueService.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8422,
+      "line": 8511,
       "symbol": "VenueService.VenueInfoList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 8424,
+      "line": 8513,
       "symbol": "VenueService.VenueOptionalFeatureList",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/venuecore-bindings/swift/unity/swift/venuecore-bindings_main_glue.swift",
-      "line": 10799,
+      "line": 10888,
       "symbol": "VenueStyle.StringArray",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
@@ -352,28 +352,28 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 370,
+      "line": 814,
       "symbol": "MapView.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 374,
+      "line": 818,
       "symbol": "MapView.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 434,
+      "line": 878,
       "symbol": "MapView.init(frame:withSdkEngine:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 450,
+      "line": 895,
       "symbol": "MapView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
