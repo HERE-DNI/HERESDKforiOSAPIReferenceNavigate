@@ -496,9 +496,6 @@
                 <a href="../Enums/FileReferenceType.html">FileReferenceType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/HazardousMaterialType.html">HazardousMaterialType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/HeadlightsRequirement.html">HeadlightsRequirement</a>
               </li>
               <li class="nav-group-task">
@@ -1477,6 +1474,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorManeuverActions.html">IndoorManeuverActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk28IndoorRouteCompletionHandlera">IndoorRouteCompletionHandler</a>
@@ -3027,6 +3030,31 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EVPoiFilterCriteriaBuilder.html">EVPoiFilterCriteriaBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Classes.html#/s:7heresdk17PoiFilterCriteriaC">PoiFilterCriteria</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthorizationError.html">AuthorizationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElectricCurrentType.html">ElectricCurrentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElectricVehicleType.html">ElectricVehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Other%20Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -3038,13 +3066,13 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Structs.html">Other Structures</a>
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk22AuthorizationExceptiona">AuthorizationException</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk25FeaturesCompletionHandlera">FeaturesCompletionHandler</a>
               </li>
             </ul>
           </li>
@@ -3566,6 +3594,102 @@ switching a map scheme.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7heresdk18MapContentSettingsC18configurePoiFilter4withyAA0fG8CriteriaC_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/configurePoiFilter(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18MapContentSettingsC18configurePoiFilter4withyAA0fG8CriteriaC_tFZ">configurePoiFilter(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configures POI filters represented as opaque criteria.</p>
+
+<p>A <code><a href="../Other%20Classes.html#/s:7heresdk17PoiFilterCriteriaC">PoiFilterCriteria</a></code> instance can be created with builders such as <code><a href="../Classes/EVPoiFilterCriteriaBuilder.html">EVPoiFilterCriteriaBuilder</a></code>.</p>
+
+<p>A builder may target one or more internal POI categories; the returned criteria apply to
+those categories. If <code>MapContentSettings.configurePoiFilter(...).filterCriteria</code> is empty (contains no filter fields), then the previously
+configured filter for the same target category or categories is reset.</p>
+
+<p>If this function is called again with criteria created by the same builder
+(thus targeting the same internal POI category or categories), the previously configured filter
+for those categories is overridden by the new one.</p>
+
+<p>If this function is called with criteria created by different builders,
+each criteria affects its own target internal POI category or categories.</p>
+
+<p>Note: Filtering takes effect only when the corresponding POI categories required by
+the filter are enabled via <code><a href="../Classes/MapContentSettings.html#/s:7heresdk18MapContentSettingsC26setPoiCategoriesVisibility11categoryIds10visibilityySaySSG_AA0H5StateOtFZ">MapContentSettings.setPoiCategoriesVisibility(...)</a></code>.</p>
+
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">configurePoiFilter</span><span class="p">(</span><span class="n">with</span> <span class="nv">filterCriteria</span><span class="p">:</span> <span class="kt"><a href="../Other%20Classes.html#/s:7heresdk17PoiFilterCriteriaC">PoiFilterCriteria</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filterCriteria</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Opaque POI filter criteria created by a specific POI builder.</p>
+
+<p>The builder defines the internal POI category or categories this filter applies to.
+Passing an empty criteria object resets the filter for those categories.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk18MapContentSettingsC15resetPoiFiltersyyFZ"></a>
+                    <a name="//apple_ref/swift/Method/resetPoiFilters()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18MapContentSettingsC15resetPoiFiltersyyFZ">resetPoiFilters()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets all previously applied POI filters across all POI categories.</p>
+
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">resetPoiFilters</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7heresdk18MapContentSettingsC22filterTrafficIncidents07trafficG0ySayAA0F12IncidentTypeOG_tFZ"></a>
                     <a name="//apple_ref/swift/Method/filterTrafficIncidents(trafficIncidents:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk18MapContentSettingsC22filterTrafficIncidents07trafficG0ySayAA0F12IncidentTypeOG_tFZ">filterTrafficIncidents(trafficIncidents:<wbr>)</a>
@@ -3742,7 +3866,7 @@ validity time and the refresh period derived from the refresh period of the traf
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-03)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

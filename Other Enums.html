@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other Structures  Reference</title>
+    <title>Other Enumerations  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Section/Other Structures" class="dashAnchor"></a>
-    <a title="Other Structures  Reference"></a>
+    <a name="//apple_ref/swift/Section/Other Enumerations" class="dashAnchor"></a>
+    <a title="Other Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">HERE SDK for iOS (Navigate) - API Reference</a></p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="index.html">HERE SDK</a>
         <img id="carat" src="img/carat.png" alt=""/>
-        Other Structures  Reference
+        Other Enumerations  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -492,9 +492,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/FileReferenceType.html">FileReferenceType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/HazardousMaterialType.html">HazardousMaterialType</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/HeadlightsRequirement.html">HeadlightsRequirement</a>
@@ -1475,6 +1472,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/IndoorManeuverActions.html">IndoorManeuverActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
               </li>
               <li class="nav-group-task">
                 <a href="Routing.html#/s:7heresdk28IndoorRouteCompletionHandlera">IndoorRouteCompletionHandler</a>
@@ -3025,6 +3028,31 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/EVPoiFilterCriteriaBuilder.html">EVPoiFilterCriteriaBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Other%20Classes.html#/s:7heresdk17PoiFilterCriteriaC">PoiFilterCriteria</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/AuthorizationError.html">AuthorizationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ElectricCurrentType.html">ElectricCurrentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/ElectricVehicleType.html">ElectricVehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="Other%20Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -3036,13 +3064,13 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Other%20Structs.html">Other Structures</a>
+            <a href="Other%20Typealiases.html">Other Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+                <a href="Other%20Typealiases.html#/s:7heresdk22AuthorizationExceptiona">AuthorizationException</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
+                <a href="Other%20Typealiases.html#/s:7heresdk25FeaturesCompletionHandlera">FeaturesCompletionHandler</a>
               </li>
             </ul>
           </li>
@@ -3051,8 +3079,8 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Other Structures</h1>
-            <p>The following structures are available globally.</p>
+            <h1>Other Enumerations</h1>
+            <p>The following enumerations are available globally.</p>
 
           </section>
           <section class="section task-group-section">
@@ -3061,9 +3089,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk22IndoorOriginalLocationV"></a>
-                    <a name="//apple_ref/swift/Struct/IndoorOriginalLocation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk22IndoorOriginalLocationV">IndoorOriginalLocation</a>
+                    <a name="/s:7heresdk19ElectricCurrentTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/ElectricCurrentType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk19ElectricCurrentTypeO">ElectricCurrentType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3071,16 +3099,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents the original location from the request before map matching.
-This is used when the routing service snaps a waypoint to a different location.</p>
+                        <p>This enum represents the type of electric current</p>
 
-                        <a href="Structs/IndoorOriginalLocation.html" class="slightly-smaller">See more</a>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
+
+                        <a href="Enums/ElectricCurrentType.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IndoorOriginalLocation</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ElectricCurrentType</span> <span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="kt">CaseIterable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -3090,9 +3119,9 @@ This is used when the routing service snaps a waypoint to a different location.<
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk25IndoorPassThroughWaypointV"></a>
-                    <a name="//apple_ref/swift/Struct/IndoorPassThroughWaypoint" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk25IndoorPassThroughWaypointV">IndoorPassThroughWaypoint</a>
+                    <a name="/s:7heresdk19ElectricVehicleTypeO"></a>
+                    <a name="//apple_ref/swift/Enum/ElectricVehicleType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk19ElectricVehicleTypeO">ElectricVehicleType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3100,18 +3129,46 @@ This is used when the routing service snaps a waypoint to a different location.<
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents a passthrough via waypoint in an indoor route.
-Passthrough waypoints are via waypoints with passThrough=true that the route
-passes through without creating a section boundary. They appear along a section&rsquo;s
-polyline at the specified offset.</p>
+                        <p>Defines the type of the electric vehicle.</p>
 
-                        <a href="Structs/IndoorPassThroughWaypoint.html" class="slightly-smaller">See more</a>
+<p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
+
+                        <a href="Enums/ElectricVehicleType.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">IndoorPassThroughWaypoint</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ElectricVehicleType</span> <span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="kt">CaseIterable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk18AuthorizationErrorO"></a>
+                    <a name="//apple_ref/swift/Enum/AuthorizationError" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18AuthorizationErrorO">AuthorizationError</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>AuthorizationError represents an error&rsquo;s enum</p>
+
+                        <a href="Enums/AuthorizationError.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AuthorizationError</span> <span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="kt">CaseIterable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AuthorizationError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
 
                         </div>
                       </div>
@@ -3123,7 +3180,7 @@ polyline at the specified offset.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-03)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

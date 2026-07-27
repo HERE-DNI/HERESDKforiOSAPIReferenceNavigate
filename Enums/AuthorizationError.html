@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HazardousMaterialType Enumeration Reference</title>
+    <title>AuthorizationError Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/HazardousMaterialType" class="dashAnchor"></a>
-    <a title="HazardousMaterialType Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Enum/AuthorizationError" class="dashAnchor"></a>
+    <a title="AuthorizationError Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">HERE SDK for iOS (Navigate) - API Reference</a></p>
@@ -29,9 +29,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">HERE SDK</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../MapData.html">MapData</a>
+        <a href="../Other%20Enums.html">Other Enumerations</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        HazardousMaterialType Enumeration Reference
+        AuthorizationError Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -494,9 +494,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/FileReferenceType.html">FileReferenceType</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/HazardousMaterialType.html">HazardousMaterialType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/HeadlightsRequirement.html">HeadlightsRequirement</a>
@@ -1477,6 +1474,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorManeuverActions.html">IndoorManeuverActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk28IndoorRouteCompletionHandlera">IndoorRouteCompletionHandler</a>
@@ -3027,6 +3030,31 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EVPoiFilterCriteriaBuilder.html">EVPoiFilterCriteriaBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Classes.html#/s:7heresdk17PoiFilterCriteriaC">PoiFilterCriteria</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthorizationError.html">AuthorizationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElectricCurrentType.html">ElectricCurrentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElectricVehicleType.html">ElectricVehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Other%20Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -3038,13 +3066,13 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Structs.html">Other Structures</a>
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk22AuthorizationExceptiona">AuthorizationException</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk25FeaturesCompletionHandlera">FeaturesCompletionHandler</a>
               </li>
             </ul>
           </li>
@@ -3053,18 +3081,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>HazardousMaterialType</h1>
+            <h1>AuthorizationError</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HazardousMaterialType</span> <span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="kt">CaseIterable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AuthorizationError</span> <span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="kt">CaseIterable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AuthorizationError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
 
                 </div>
               </div>
-            <p>Hazardous material type as defined in the enum applicable for those that carry these</p>
-
-<p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected
-behaviors. Related APIs may change for new releases without a deprecation process.</p>
+            <p>AuthorizationError represents an error&rsquo;s enum</p>
 
           </section>
           <section class="section task-group-section">
@@ -3073,9 +3099,9 @@ behaviors. Related APIs may change for new releases without a deprecation proces
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO7unknownyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/unknown" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO7unknownyA2CmF">unknown</a>
+                    <a name="/s:7heresdk18AuthorizationErrorO16invalidParameteryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/invalidParameter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18AuthorizationErrorO16invalidParameteryA2CmF">invalidParameter</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3083,14 +3109,14 @@ behaviors. Related APIs may change for new releases without a deprecation proces
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unknown hazardous material classification.</p>
+                        <p>Invalid parameter was received.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">unknown</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">invalidParameter</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
                       </div>
@@ -3100,9 +3126,9 @@ behaviors. Related APIs may change for new releases without a deprecation proces
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO10explosivesyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/explosives" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO10explosivesyA2CmF">explosives</a>
+                    <a name="/s:7heresdk18AuthorizationErrorO6failedyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/failed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18AuthorizationErrorO6failedyA2CmF">failed</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3110,14 +3136,14 @@ behaviors. Related APIs may change for new releases without a deprecation proces
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Explosive material.</p>
+                        <p>Operation failed. See detailed information in log.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">explosives</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">failed</span></code></pre>
 
                         </div>
                       </div>
@@ -3127,9 +3153,9 @@ behaviors. Related APIs may change for new releases without a deprecation proces
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO3gasyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/gas" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO3gasyA2CmF">gas</a>
+                    <a name="/s:7heresdk18AuthorizationErrorO22externalAuthenticationyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/externalAuthentication" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk18AuthorizationErrorO22externalAuthenticationyA2CmF">externalAuthentication</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3137,640 +3163,15 @@ behaviors. Related APIs may change for new releases without a deprecation proces
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gas.</p>
+                        <p>External authentication is used, therefore authorization is not available.
+Currently, only the KEY_AND_SECRET authentication method is supported.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">gas</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO9flammableyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/flammable" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO9flammableyA2CmF">flammable</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Flammable material.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">flammable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO25flammableSolidCombustibleyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/flammableSolidCombustible" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO25flammableSolidCombustibleyA2CmF">flammableSolidCombustible</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Flammable solids and combustible materials.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">flammableSolidCombustible</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO11combustibleyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/combustible" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO11combustibleyA2CmF">combustible</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Combustible material.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">combustible</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO7organicyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/organic" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO7organicyA2CmF">organic</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Organic material.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">organic</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO6poisonyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/poison" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO6poisonyA2CmF">poison</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Poisonous material.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">poison</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO11radioactiveyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/radioactive" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO11radioactiveyA2CmF">radioactive</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Radioactive material.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">radioactive</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO9corrosiveyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/corrosive" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO9corrosiveyA2CmF">corrosive</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Corrosive material.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">corrosive</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO5otheryA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/other" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO5otheryA2CmF">other</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Any other hazardous material.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">other</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO03anybC0yA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/anyHazardousMaterial" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO03anybC0yA2CmF">anyHazardousMaterial</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Any type of hazardous material (composite restriction).</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">anyHazardousMaterial</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO19poisonousInhalationyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/poisonousInhalation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO19poisonousInhalationyA2CmF">poisonousInhalation</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Materials that are poisonous upon inhalation.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">poisonousInhalation</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO14harmfulToWateryA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/harmfulToWater" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO14harmfulToWateryA2CmF">harmfulToWater</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Materials that are harmful to water.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">harmfulToWater</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO21explosiveAndFlammableyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/explosiveAndFlammable" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO21explosiveAndFlammableyA2CmF">explosiveAndFlammable</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Explosive and flammable materials combined (composite restriction).</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">explosiveAndFlammable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO1byA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/b" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO1byA2CmF">b</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Category B. Prohibited for the transport of hazardous substances
-which could cause a very large explosion.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">b</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO6b1000cyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/b1000c" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO6b1000cyA2CmF">b1000c</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tunnel restriction category B/1000C</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">b1000c</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO2bDyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/bD" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO2bDyA2CmF">bD</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tunnel restriction category B/D</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bD</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO2bEyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/bE" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO2bEyA2CmF">bE</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tunnel restriction category B/E</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">bE</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO1cyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/c" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO1cyA2CmF">c</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Category C. The same restriction as for B, plus hazardous goods which
-could cause a large explosion or the extensive release of toxic substances.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">c</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO6c5000dyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/c5000d" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO6c5000dyA2CmF">c5000d</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tunnel restriction category C/5000D</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">c5000d</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO2cDyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/cD" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO2cDyA2CmF">cD</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tunnel restriction category C/D</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cD</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO2cEyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/cE" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO2cEyA2CmF">cE</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tunnel restriction category C/E</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">cE</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO1dyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/d" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO1dyA2CmF">d</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Category D. The same restrictions as for C plus hazardous goods which
-could cause a large fire.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">d</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO2dEyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/dE" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO2dEyA2CmF">dE</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Tunnel restriction category D/E</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">dE</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk21HazardousMaterialTypeO1eyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/e" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21HazardousMaterialTypeO1eyA2CmF">e</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Category E. Prohibited for the transport of all hazardous substances.
-There are some exceptions for certain radioactive substances, clinical
-waste and samples.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">e</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">externalAuthentication</span></code></pre>
 
                         </div>
                       </div>
@@ -3782,7 +3183,7 @@ waste and samples.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-03)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

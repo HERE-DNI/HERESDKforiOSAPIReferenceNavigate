@@ -496,9 +496,6 @@
                 <a href="../Enums/FileReferenceType.html">FileReferenceType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/HazardousMaterialType.html">HazardousMaterialType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/HeadlightsRequirement.html">HeadlightsRequirement</a>
               </li>
               <li class="nav-group-task">
@@ -1477,6 +1474,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorManeuverActions.html">IndoorManeuverActions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk28IndoorRouteCompletionHandlera">IndoorRouteCompletionHandler</a>
@@ -3027,6 +3030,31 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EVPoiFilterCriteriaBuilder.html">EVPoiFilterCriteriaBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Classes.html#/s:7heresdk17PoiFilterCriteriaC">PoiFilterCriteria</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthorizationError.html">AuthorizationError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElectricCurrentType.html">ElectricCurrentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ElectricVehicleType.html">ElectricVehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Other%20Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -3038,13 +3066,13 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Structs.html">Other Structures</a>
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk22AuthorizationExceptiona">AuthorizationException</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
+                <a href="../Other%20Typealiases.html#/s:7heresdk25FeaturesCompletionHandlera">FeaturesCompletionHandler</a>
               </li>
             </ul>
           </li>
@@ -3647,6 +3675,134 @@ A guide on how to achieve this can be found towards the end of the <code>MapScen
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7heresdk8MapSceneC03addB8Polyline_9layerNameSbAA0bE0C_SStF"></a>
+                    <a name="//apple_ref/swift/Method/addMapPolyline(_:layerName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk8MapSceneC03addB8Polyline_9layerNameSbAA0bE0C_SStF">addMapPolyline(_:<wbr>layerName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a single polyline to the layer identified by a layer name.
+The layer must have been created via <code><a href="../Classes/MapScene.html#/s:7heresdk8MapSceneC03addB13PolylineLayer4name13layerPrioritySbSS_AA0bfI0CSgtF">MapScene.addMapPolylineLayer(...)</a></code> before calling this method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addMapPolyline</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapPolyline</span><span class="p">:</span> <span class="kt"><a href="../Classes/MapPolyline.html">MapPolyline</a></span><span class="p">,</span> <span class="nv">layerName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapPolyline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The map polyline to be added to the layer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>layerName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the layer to add the polyline to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the layer exists and the polyline was added, <code>false</code> otherwise.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk8MapSceneC03addB9Polylines_9layerNameSbSayAA0B8PolylineCG_SStF"></a>
+                    <a name="//apple_ref/swift/Method/addMapPolylines(_:layerName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk8MapSceneC03addB9Polylines_9layerNameSbSayAA0B8PolylineCG_SStF">addMapPolylines(_:<wbr>layerName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds multiple polylines to the layer identified by a layer name.
+The layer must have been created via <code><a href="../Classes/MapScene.html#/s:7heresdk8MapSceneC03addB13PolylineLayer4name13layerPrioritySbSS_AA0bfI0CSgtF">MapScene.addMapPolylineLayer(...)</a></code> before calling this method.
+Polylines that are already part of the layer are skipped.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addMapPolylines</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapPolylines</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/MapPolyline.html">MapPolyline</a></span><span class="p">],</span> <span class="nv">layerName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapPolylines</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The map polylines to be added to the layer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>layerName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the layer to add the polylines to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the layer exists and any of the polylines is added, <code>false</code> if the layer
+was not found, or none of the polylines is added.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7heresdk8MapSceneC06removeB8PolylineyyAA0bE0CF"></a>
                     <a name="//apple_ref/swift/Method/removeMapPolyline(_:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk8MapSceneC06removeB8PolylineyyAA0bE0CF">removeMapPolyline(_:<wbr>)</a>
@@ -3759,6 +3915,125 @@ A guide on how to achieve this can be found towards the end of the <code>MapScen
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllMapPolylines</span><span class="p">()</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk8MapSceneC03addB13PolylineLayer4name13layerPrioritySbSS_AA0bfI0CSgtF"></a>
+                    <a name="//apple_ref/swift/Method/addMapPolylineLayer(name:layerPriority:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk8MapSceneC03addB13PolylineLayer4name13layerPrioritySbSS_AA0bfI0CSgtF">addMapPolylineLayer(name:<wbr>layerPriority:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates and registers a new polyline layer for this map scene.</p>
+
+<p>The layer is rendered according to the specified priority. If no priority is provided,
+the layer is rendered at the default polyline position.
+Polylines can be added to the layer by calling <code>addMapPolyline</code> or <code>addMapPolylines</code>
+with the same name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addMapPolylineLayer</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">layerPriority</span><span class="p">:</span> <span class="kt"><a href="../Maps.html#/s:7heresdk16MapLayerPriorityC">MapLayerPriority</a></span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A unique name for the layer within this map scene.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>layerPriority</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional render priority relative to other layers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the layer was created successfully, <code>false</code> if a layer with that name
+already exists.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk8MapSceneC06removeB13PolylineLayer4nameSbSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeMapPolylineLayer(name:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk8MapSceneC06removeB13PolylineLayer4nameSbSS_tF">removeMapPolylineLayer(name:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the polyline layer identified by a name from this map scene, including all polylines
+contained in it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeMapPolylineLayer</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the layer to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the layer was found and removed, <code>false</code> if no layer with that name exists.</p>
                       </div>
                     </section>
                   </div>
@@ -5041,7 +5316,7 @@ Therefore, calling this method may take slightly longer than calling one of the
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-03)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
