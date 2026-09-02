@@ -3051,6 +3051,17 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Other%20Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -3318,10 +3329,11 @@ behavior. Related APIs may change for new releases without a deprecation process
                         <p>Placeholder layer positioned above route polylines in the map layer stack.</p>
 
 <p>Route polylines are rendered immediately below <code>VisualNavigator.routeLayerOverlay</code>.
-To render a custom polyline above route polylines, create a named
-layer using <code><a href="../Classes/MapScene.html#/s:7heresdk8MapSceneC03addB13PolylineLayer4name13layerPrioritySbSS_AA0bfI0CSgtF">MapScene.addMapPolylineLayer(...)</a></code> and add the
-polyline to that layer using the overload of <code>addMapPolyline</code> that
-accepts a layer name.</p>
+Map polylines added without a layer name using <code>MapScene.addMapPolyline(MapPolyline, String)</code>
+are rendered below the route polylines. To render a custom polyline above route polylines,
+create a named layer using <code><a href="../Classes/MapScene.html#/s:7heresdk8MapSceneC03addB13PolylineLayer4name13layerPrioritySbSS_AA0bfI0CSgtF">MapScene.addMapPolylineLayer(...)</a></code> with a
+<code><a href="../Maps.html#/s:7heresdk16MapLayerPriorityC">MapLayerPriority</a></code> that places the layer after <code>VisualNavigator.routeLayerOverlay</code>, and add
+the polyline to that layer using the overload of <code>addMapPolyline</code> that accepts a layer name.</p>
 
 <p><strong>Note:</strong> This is a <strong>beta</strong> release of this feature and may contain bugs or exhibit unexpected behaviour. Related APIs are subject to change without a deprecation process.</p>
 
@@ -5324,64 +5336,6 @@ Default is 30fps.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk15VisualNavigatorC14routeDrawOrders5Int32Vvp"></a>
-                    <a name="//apple_ref/swift/Property/routeDrawOrder" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk15VisualNavigatorC14routeDrawOrders5Int32Vvp">routeDrawOrder</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The draw order of the polylines representing the route.
-The default is 0.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.27.3. Use `addMapPolylineLayer(layerName, priority﹚` and `addMapPolyline(polyline, layerName﹚` instead.")</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">routeDrawOrder</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk15VisualNavigatorC18routeDrawOrderTypeAA0efG0Ovp"></a>
-                    <a name="//apple_ref/swift/Property/routeDrawOrderType" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk15VisualNavigatorC18routeDrawOrderTypeAA0efG0Ovp">routeDrawOrderType</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The draw order type of the polylines representing the route.
-The default is <code><a href="../Enums/DrawOrderType.html#/s:7heresdk13DrawOrderTypeO016mapSceneAdditionC9DependentyA2CmF">DrawOrderType.mapSceneAdditionOrderDependent</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.27.3. Use `addMapPolylineLayer(layerName, priority﹚` and `addMapPolyline(polyline, layerName﹚` instead.")</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">routeDrawOrderType</span><span class="p">:</span> <span class="kt"><a href="../Enums/DrawOrderType.html">DrawOrderType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:7heresdk15VisualNavigatorC11getManeuver5indexAA0E0CSgs5Int32V_tF"></a>
                     <a name="//apple_ref/swift/Method/getManeuver(index:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk15VisualNavigatorC11getManeuver5indexAA0E0CSgs5Int32V_tF">getManeuver(index:<wbr>)</a>
@@ -6043,7 +5997,7 @@ are no longer updated.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

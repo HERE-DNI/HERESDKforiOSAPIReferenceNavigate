@@ -44,14 +44,14 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 7192,
+      "line": 7200,
       "symbol": "EngineOptions.init(customBaseUrl:customAuthenticationMode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 14497,
+      "line": 14505,
       "symbol": "VehicleRestriction.init(restriction:hazmatRestriction:timeRestriction:appliesToDelivery:weather:truckCategory:trailerCount:axleCount:axleCountInGroup:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
