@@ -1235,6 +1235,15 @@
                 <a href="Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1390,9 +1399,6 @@
                 <a href="Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1529,12 +1535,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2567,10 +2567,16 @@
                 <a href="Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3049,13 +3055,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Other%20Classes.html">Other Classes</a>
+            <a href="Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3067,6 +3070,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -4167,7 +4184,7 @@ directly connected and changing one will automatically change the others as well
 
 <ul>
 <li><code>distance</code>: the distance from the camera to the look-at target on the surface of the Earth, in meters</li>
-<li><code>zoom-level</code>: the map zoom level, in the range [0, 3]. The relation between the width of the equator in logical pixels <code>w</code> and the zoom level <code>z</code> is: <code>w = 256 * 2^(z)</code></li>
+<li><code>zoom-level</code>: the map zoom level, in the range [0, 23]. The relation between the width of the equator in logical pixels <code>w</code> and the zoom level <code>z</code> is: <code>w = 256 * 2^(z)</code></li>
 <li><code>scale</code>: the scale of the map at the look-at target in meters on screen per meters on Earth. So a scale of 0.001 shows 10 meters on Earth within 1 cm on screen.</li>
 </ul>
 
@@ -7053,6 +7070,96 @@ The implementations must be thread-safe.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7heresdk35PositionIndicatorMeshRepresentationC"></a>
+                    <a name="//apple_ref/swift/Class/PositionIndicatorMeshRepresentation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mesh-based visual representation of a PositionIndicator: geometry, texture, color and lighting.
+Instances are immutable. Use PositionIndicatorMeshRepresentationBuilder to create instances.
+To change appearance, create a new instance and call setRepresentation again.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PositionIndicatorMeshRepresentation</span> <span class="p">:</span> <span class="kt"><a href="Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk42PositionIndicatorMeshRepresentationBuilderC"></a>
+                    <a name="//apple_ref/swift/Class/PositionIndicatorMeshRepresentationBuilder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk42PositionIndicatorMeshRepresentationBuilderC">PositionIndicatorMeshRepresentationBuilder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Builder for creating immutable PositionIndicatorMeshRepresentation instances.
+Only the geometry URI is required. All other properties have documented defaults.</p>
+
+                        <a href="Classes/PositionIndicatorMeshRepresentationBuilder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PositionIndicatorMeshRepresentationBuilder</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">PositionIndicatorMeshRepresentationBuilder</span><span class="p">:</span> <span class="kt">NativeBase</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">PositionIndicatorMeshRepresentationBuilder</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk31PositionIndicatorRepresentationC"></a>
+                    <a name="//apple_ref/swift/Class/PositionIndicatorRepresentation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Base class for visual representations of a PositionIndicator.
+Use PositionIndicatorMeshRepresentation for mesh-based rendering.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PositionIndicatorRepresentation</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">PositionIndicatorRepresentation</span><span class="p">:</span> <span class="kt">NativeBase</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">PositionIndicatorRepresentation</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7heresdk15QuadMeshBuilderC"></a>
                     <a name="//apple_ref/swift/Class/QuadMeshBuilder" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk15QuadMeshBuilderC">QuadMeshBuilder</a>
@@ -8095,7 +8202,7 @@ night or satellite based).</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

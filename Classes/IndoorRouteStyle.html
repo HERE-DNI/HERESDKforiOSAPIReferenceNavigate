@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3087,9 +3104,9 @@
 
                 </div>
               </div>
-            <p>Represents a style of the indoor route. Contains information about route colors and widths.
-Optionally, this style allows to set <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instances that can be used for
-specific route elements.</p>
+            <p>Represents a style of the indoor route. Contains information about route colors, widths, and markers.
+Markers set through this style override the SDK&rsquo;s built-in defaults. Any marker left unset will
+automatically use the SDK&rsquo;s default icon when the route is rendered.</p>
 
           </section>
           <section class="section task-group-section">
@@ -3135,7 +3152,7 @@ specific route elements.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The width in pixels. Default value is 15 pixels
+                        <p>The width in pixels. Default value is 15 pixels.
 The width in pixels of polylines for indoor route sections.</p>
 
                       </div>
@@ -3191,7 +3208,8 @@ The color of polylines for indoor route sections.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the start of the route. By default, no map marker is provided.
+                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the start of the route.
+If not set, the SDK displays a built-in default start marker.
 The start map marker of the resulting route.</p>
 
                       </div>
@@ -3219,7 +3237,8 @@ The start map marker of the resulting route.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the destination of the route. By default, no map marker is provided
+                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the destination of the route.
+If not set, the SDK displays a built-in default destination marker.
 The destination map marker of the resulting route.</p>
 
                       </div>
@@ -3247,7 +3266,8 @@ The destination map marker of the resulting route.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the walk point of the route. By default, no map marker is provided.
+                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the walk point of the route.
+If not set, the SDK displays a built-in default walk marker.
 The walk map marker of the resulting route. It signals that a user should leave their transport vehicle and continue on foot.</p>
 
                       </div>
@@ -3275,7 +3295,8 @@ The walk map marker of the resulting route. It signals that a user should leave 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the drive point of the route. By default, no map marker is provided.
+                        <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> instance representing the drive point of the route.
+If not set, the SDK displays a built-in default drive marker.
 The drive map marker of the resulting route. It signals that a user should take a transport vehicle.</p>
 
                       </div>
@@ -3303,8 +3324,9 @@ The drive map marker of the resulting route. It signals that a user should take 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns a <code><a href="../Classes/MapMarker.html">MapMarker</a></code> for a given indoor feature and
-the number of levels to change. By default, no map markers are provided.</p>
+                        <p>Returns a <code><a href="../Classes/MapMarker.html">MapMarker</a></code> for a given indoor feature and direction.
+If no custom marker has been set for the given feature and direction, returns null.
+When null, the SDK uses a built-in default icon during route rendering.</p>
 
                       </div>
                       <div class="declaration">
@@ -3349,7 +3371,7 @@ In the case of 0, the method returns an exit map marker.</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>The result <code><a href="../Classes/MapMarker.html">MapMarker</a></code>, if it was set.</p>
+                        <p>The custom <code><a href="../Classes/MapMarker.html">MapMarker</a></code> if set, or null if the SDK default should be used.</p>
                       </div>
                     </section>
                   </div>
@@ -3367,7 +3389,9 @@ In the case of 0, the method returns an exit map marker.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets map markers for the given indoor feature.</p>
+                        <p>Sets custom map markers for the given indoor feature. Pass null for any direction to let
+the SDK use its built-in default icon for that direction. Each direction (up, down, exit)
+is resolved independently — you can override only the ones you need.</p>
 
                       </div>
                       <div class="declaration">
@@ -3402,7 +3426,7 @@ In the case of 0, the method returns an exit map marker.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> to go up.</p>
+                                  <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> to go up. Pass null to use SDK default.</p>
                                 </div>
                               </td>
                             </tr>
@@ -3414,7 +3438,7 @@ In the case of 0, the method returns an exit map marker.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> to go down.</p>
+                                  <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> to go down. Pass null to use SDK default.</p>
                                 </div>
                               </td>
                             </tr>
@@ -3426,7 +3450,7 @@ In the case of 0, the method returns an exit map marker.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> to exit the indoor feature.</p>
+                                  <p>A <code><a href="../Classes/MapMarker.html">MapMarker</a></code> to exit the indoor feature. Pass null to use SDK default.</p>
                                 </div>
                               </td>
                             </tr>
@@ -3441,7 +3465,7 @@ In the case of 0, the method returns an exit map marker.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

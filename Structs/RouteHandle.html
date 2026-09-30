@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3092,7 +3109,8 @@ Note that the <code><a href="../Classes/Route.html#/s:7heresdk5RouteC11routeHand
 if <code><a href="../Structs/RouteOptions.html#/s:7heresdk12RouteOptionsV06enableB6HandleSbvp">RouteOptions.enableRouteHandle</a></code> is set before route calculation.
 A <code>RouteHandle</code> generated by the online <code><a href="../Classes/RoutingEngine.html">RoutingEngine</a></code> is not compatible with the <code><a href="../Classes/OfflineRoutingEngine.html">OfflineRoutingEngine</a></code>.
 Similarly, a <code>RouteHandle</code> from the <code><a href="../Classes/OfflineRoutingEngine.html">OfflineRoutingEngine</a></code> cannot be used with the online <code><a href="../Classes/RoutingEngine.html">RoutingEngine</a></code>.
-Using an incompatible <code>RouteHandle</code> results in a <code><a href="../Enums/RoutingError.html">RoutingError</a></code>.</p>
+Using an incompatible <code>RouteHandle</code> results in a
+<code><a href="../Enums/RoutingError.html#/s:7heresdk12RoutingErrorO23incompatibleRouteHandleyA2CmF">RoutingError.incompatibleRouteHandle</a></code>. See <code><a href="../Structs/RouteHandle.html#/s:7heresdk11RouteHandleV6sourceAA19RoutingEngineSourceOSgvp">RouteHandle.source</a></code>.</p>
 
           </section>
           <section class="section task-group-section">
@@ -3111,7 +3129,7 @@ Using an incompatible <code>RouteHandle</code> results in a <code><a href="../En
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Handle value as it is provided by routing server.</p>
+                        <p>Handle value as provided by the routing engine that created this handle.</p>
 
                       </div>
                       <div class="declaration">
@@ -3128,9 +3146,39 @@ Using an incompatible <code>RouteHandle</code> results in a <code><a href="../En
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk11RouteHandleV6handleACSS_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(handle:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk11RouteHandleV6handleACSS_tcfc">init(handle:<wbr>)</a>
+                    <a name="/s:7heresdk11RouteHandleV6sourceAA19RoutingEngineSourceOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/source" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk11RouteHandleV6sourceAA19RoutingEngineSourceOSgvp">source</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The routing engine that created this handle.
+If it cannot be determined, the value is <code>nil</code>, for example for a handle constructed by
+the application or restored from data serialized by an earlier HERE SDK version.
+No compatibility check is performed in that case.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">source</span><span class="p">:</span> <span class="kt"><a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk11RouteHandleV6handle6sourceACSS_AA19RoutingEngineSourceOSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(handle:source:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk11RouteHandleV6handle6sourceACSS_AA19RoutingEngineSourceOSgtcfc">init(handle:<wbr>source:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3145,7 +3193,7 @@ Using an incompatible <code>RouteHandle</code> results in a <code><a href="../En
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">handle</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">handle</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">source</span><span class="p">:</span> <span class="kt"><a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -3157,7 +3205,7 @@ Using an incompatible <code>RouteHandle</code> results in a <code><a href="../En
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

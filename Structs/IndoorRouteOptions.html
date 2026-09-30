@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3217,37 +3234,6 @@ no restrictions are applied.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk18IndoorRouteOptionsV22speedInMetersPerSecondSdvp"></a>
-                    <a name="//apple_ref/swift/Property/speedInMetersPerSecond" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk18IndoorRouteOptionsV22speedInMetersPerSecondSdvp">speedInMetersPerSecond</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Specifies the speed that will be used by the service as the speed
-for <code><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></code> in meters per second.
-It influences the duration of segments along the route.
-The default speed is 1 meter per second.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.28.0. Use `VenuePedestrianSpecification.walking_speed_in_meters_per_second` instead.")</span>
-<span class="kd">public</span> <span class="k">var</span> <span class="nv">speedInMetersPerSecond</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:7heresdk18IndoorRouteOptionsV12viaWaypointsSayAA0B8WaypointCGvp"></a>
                     <a name="//apple_ref/swift/Property/viaWaypoints" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk18IndoorRouteOptionsV12viaWaypointsSayAA0B8WaypointCGvp">viaWaypoints</a>
@@ -3358,90 +3344,12 @@ origin and destination. Via waypoints are processed in the exact order provided.
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode27venueTransportSpecification015indoorAvoidanceD022speedInMetersPerSecond12viaWaypointsAcA0cD0V_AA05VenueiG0OAA0tiJ0VAA0blD0VSdSayAA0B8WaypointCGtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(routeOptions:transportMode:venueTransportSpecification:indoorAvoidanceOptions:speedInMetersPerSecond:viaWaypoints:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk18IndoorRouteOptionsV05routeD013transportMode27venueTransportSpecification015indoorAvoidanceD022speedInMetersPerSecond12viaWaypointsAcA0cD0V_AA05VenueiG0OAA0tiJ0VAA0blD0VSdSayAA0B8WaypointCGtcfc">init(routeOptions:<wbr>transportMode:<wbr>venueTransportSpecification:<wbr>indoorAvoidanceOptions:<wbr>speedInMetersPerSecond:<wbr>viaWaypoints:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates an object and assign default values for route options.</p>
-
-<ul>
-<li><p>Parameters</p>
-
-<ul>
-<li>routeOptions: Specifies the common route calculation options.</li>
-</ul>
-
-<p><strong>Note:</strong> Currently, only <code><a href="../Structs/RouteOptions.html#/s:7heresdk12RouteOptionsV16optimizationModeAA012OptimizationE0Ovp">RouteOptions.optimizationMode</a></code> parameter is
-  utilized for indoor route calculation.</p>
-
-<ul>
-<li>transportMode: The transport mode for route calculation.</li>
-</ul>
-
-<p><strong>Note:</strong> Mode of transport for the resulting indoor route will by default be
-  <code><a href="../Enums/VenueTransportMode.html#/s:7heresdk18VenueTransportModeO10pedestrianyA2CmF">VenueTransportMode.pedestrian</a></code> in the current implementation.
-  This option will affect only indoor route sections.</p>
-
-<ul>
-<li>venueTransportSpecification: Defines the venue transport specification which contains the vehicle specifications
-for the transport mode chosen via <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.
-<strong>Notes:</strong>
-
-<ul>
-<li>By default all vehicle specifications from <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV27venueTransportSpecificationAA05VenuefG0Vvp">IndoorRouteOptions.venueTransportSpecification</a></code> are set to <code>nil</code>.</li>
-<li>The transport mode is determined by <code><a href="../Structs/IndoorRouteOptions.html#/s:7heresdk18IndoorRouteOptionsV13transportModeAA014VenueTransportF0Ovp">IndoorRouteOptions.transportMode</a></code>.</li>
-</ul></li>
-<li>indoorAvoidanceOptions: Options to specify restrictions for indoor route calculations. By default
-no restrictions are applied.</li>
-<li>speedInMetersPerSecond: Specifies the speed that will be used by the service as the speed
-for <code><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></code> in meters per second.
-It influences the duration of segments along the route.
-The default speed is 1 meter per second.</li>
-<li>viaWaypoints: Specifies the via waypoints that the route should pass through between the
-origin and destination. Via waypoints are processed in the exact order provided.</li>
-</ul>
-
-<p><strong>Notes:</strong></p>
-
-<ul>
-<li>Maximum of 5 via waypoints are allowed.</li>
-<li>Via waypoints can be either stop waypoints (with <code>stop_duration</code>) or passthrough
-  waypoints (with <code>pass_through = true</code>).</li>
-<li>Via waypoints with <code>stop_duration</code> or <code>pass_through = false</code> create section
-  in the resulting route.</li>
-<li>Via waypoints with <code>pass_through = true</code> appear in the section&rsquo;s passthrough array.</li>
-<li>The order of via waypoints determines the routing path and must be preserved.</li>
-</ul></li>
-</ul>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated)</span>
-<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">routeOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/RouteOptions.html">RouteOptions</a></span><span class="p">(),</span> <span class="nv">transportMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span> <span class="o">=</span> <span class="kt"><a href="../Enums/VenueTransportMode.html">VenueTransportMode</a></span><span class="o">.</span><span class="n">pedestrian</span><span class="p">,</span> <span class="nv">venueTransportSpecification</span><span class="p">:</span> <span class="kt"><a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/VenueTransportSpecification.html">VenueTransportSpecification</a></span><span class="p">(),</span> <span class="nv">indoorAvoidanceOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span> <span class="o">=</span> <span class="kt"><a href="../Structs/IndoorAvoidanceOptions.html">IndoorAvoidanceOptions</a></span><span class="p">(),</span> <span class="nv">speedInMetersPerSecond</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="nv">viaWaypoints</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/IndoorWaypoint.html">IndoorWaypoint</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

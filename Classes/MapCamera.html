@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3140,7 +3157,7 @@ directly connected and changing one will automatically change the others as well
 
 <ul>
 <li><code>distance</code>: the distance from the camera to the look-at target on the surface of the Earth, in meters</li>
-<li><code>zoom-level</code>: the map zoom level, in the range [0, 3]. The relation between the width of the equator in logical pixels <code>w</code> and the zoom level <code>z</code> is: <code>w = 256 * 2^(z)</code></li>
+<li><code>zoom-level</code>: the map zoom level, in the range [0, 23]. The relation between the width of the equator in logical pixels <code>w</code> and the zoom level <code>z</code> is: <code>w = 256 * 2^(z)</code></li>
 <li><code>scale</code>: the scale of the map at the look-at target in meters on screen per meters on Earth. So a scale of 0.001 shows 10 meters on Earth within 1 cm on screen.</li>
 </ul>
 
@@ -3420,21 +3437,25 @@ and camera projection (<code>field of view</code>, <code>focal length</code> and
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Determines the pixel point where the target is placed within the map view. Setting a new
-principal point instantly moves the map to render the current target coordinates
-at the new principal point.
-By default, the principal point is located at the center of the map view.
-It is set in pixels relative to the map view&rsquo;s origin top-left (0, 0).
-Values outside the map view&rsquo;s dimensions (x &lt; 0 || x &gt; width, y &lt; 0 || y &gt; height)
-will be rejected silently and the current principal point is kept.</p>
+                        <p>The pixel point where the target is placed within the map view.
+Setting a new principal point instantly moves the map to render the current
+target coordinates at the new principal point.</p>
+
+<p>By default, the principal point is located at the center of the map view.
+It is set in pixels relative to the map view&rsquo;s origin top-left <code>(0, 0)</code>.</p>
+
+<p>The valid range for the principal point is: <code>0 &lt;= x &lt;= width</code> and <code>0 &lt;= y &lt;= height</code>,
+where <code>width</code> and <code>height</code> are the dimensions of the map view in pixels.</p>
+
+<p>Values outside these bounds will be rejected silently and the current principal point is kept.</p>
 
 <p>The value of the principal point is adjusted when the dimensions of the
 map view change, so that it stays in the same point relative to width
-and height. Meaning that when a principal point it set to bottom
+and height. Meaning that when a principal point is set to bottom
 middle of the map view, it will stay in the bottom middle regardless
 of the changes to dimensions and orientation of the view.</p>
 
-<p>Note: The principal point affects all programmatical map transformations (rotate, orbit, tilt and zoom)
+<p>Note: The principal point affects all programmatic map transformations (rotate, orbit, tilt and zoom)
 and the two-finger-pan gesture to tilt the map. Other gestures, like pinch-rotate,
 are not affected.</p>
 
@@ -3590,27 +3611,36 @@ distanceToTargetInMeters * distanceFactor
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets far plane distance configs per zoom level.</p>
+                        <p>Sets far plane distance configuration per zoom level.</p>
 
-<p>Values are linearly interpolated between provided zoom levels.
-For z between z0 and z1:
-t = (z - z0) / (z1 - z0)
-distanceFactor(z) = lerp(distanceFactor0, distanceFactor1, t)
-minDistance(z) = lerp(minDistance0, minDistance1, t)</p>
+<p>Values are linearly interpolated between provided zoom levels.</p>
 
-<p>Effective far plane for the current frame is:
-farPlaneInMeters = max(
-minDistance(z),
-distanceToTargetInMeters * distanceFactor(z)
-)</p>
+<p>For z between z0 and z1:</p>
+<pre class="highlight swift"><code><span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">z</span> <span class="o">-</span> <span class="n">z0</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">z1</span> <span class="o">-</span> <span class="n">z0</span><span class="p">)</span>
+<span class="nf">distanceFactor</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="o">=</span> <span class="nf">lerp</span><span class="p">(</span><span class="n">distanceFactor0</span><span class="p">,</span> <span class="n">distanceFactor1</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+<span class="nf">minDistance</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="o">=</span> <span class="nf">lerp</span><span class="p">(</span><span class="n">minDistance0</span><span class="p">,</span> <span class="n">minDistance1</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+</code></pre>
 
-<p>Sample Configuration (balanced quality/performance, tune per zoom level):
-14.4  -&gt; FarPlaneConfiguration(1.3)
-18.34 -&gt; FarPlaneConfiguration(2.0)
-19.60 -&gt; FarPlaneConfiguration(1.3)
-minDistanceInMeters remains default in this case.
-Passing an empty map clears the per-zoom override and restores the default behavior.
-Non-finite zoom levels or values are ignored. Distance factors are clamped to 0.1 to 10.0.
+<p>Effective far plane for the current frame is:</p>
+<pre class="highlight swift"><code><span class="n">farPlaneInMeters</span> <span class="o">=</span> <span class="nf">max</span><span class="p">(</span>
+    <span class="nf">minDistance</span><span class="p">(</span><span class="n">z</span><span class="p">),</span>
+    <span class="n">distanceToTargetInMeters</span> <span class="o">*</span> <span class="nf">distanceFactor</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Sample Configuration (balanced quality/performance, tune per zoom level):</p>
+
+<ul>
+<li><code>14.4</code>  -&gt; <code>FarPlaneConfiguration(1.3)</code></li>
+<li><code>18.34</code> -&gt; <code>FarPlaneConfiguration(2.0)</code></li>
+<li><code>19.60</code> -&gt; <code>FarPlaneConfiguration(1.3)</code></li>
+</ul>
+
+<p><code><a href="../Classes/MapCamera/FarPlaneConfiguration.html#/s:7heresdk9MapCameraC21FarPlaneConfigurationV19minDistanceInMetersSdvp">MapCamera.FarPlaneConfiguration.minDistanceInMeters</a></code> remains default in this case.</p>
+
+<p>Passing an empty map clears the per-zoom override and restores the default behavior.</p>
+
+<p>Non-finite zoom levels or values are ignored. Distance factors are clamped to 0.1 to 10.0.
 The minimum distance is clamped to a range of [100, 3000] meters.</p>
 
                       </div>
@@ -4683,7 +4713,7 @@ Minimal distance value is clamped to 100 meters.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

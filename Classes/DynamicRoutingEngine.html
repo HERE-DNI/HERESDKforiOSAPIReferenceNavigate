@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3362,102 +3379,6 @@ consider to use one of the overloaded methods instead.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk20DynamicRoutingEngineC5start11routeHandle9waypoints19refreshRouteOptions8delegateyAA0jG0V_SayAA8WaypointVGAA07RefreshjK0CAA0bC8Delegate_ptKF"></a>
-                    <a name="//apple_ref/swift/Method/start(routeHandle:waypoints:refreshRouteOptions:delegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk20DynamicRoutingEngineC5start11routeHandle9waypoints19refreshRouteOptions8delegateyAA0jG0V_SayAA8WaypointVGAA07RefreshjK0CAA0bC8Delegate_ptKF">start(routeHandle:<wbr>waypoints:<wbr>refreshRouteOptions:<wbr>delegate:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Starts polling the HERE backend services to find a better route,
-as defined by the <code><a href="../Structs/DynamicRoutingEngineOptions.html">DynamicRoutingEngineOptions</a></code>.</p>
-
-<p><strong>Note:</strong> The engine will be internally stopped, if it was started before.
-Therefore, it is not necessary to stop the engine before starting it again.</p>
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    <code><a href="../Classes/DynamicRoutingEngine.html#/s:7heresdk20DynamicRoutingEngineC14StartExceptiona">DynamicRoutingEngine.StartException</a></code> when the passed parameter are invalid.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.28.0. Use the `start(﹚` method with RoutingOptions parameter instead.")</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">start</span><span class="p">(</span><span class="nv">routeHandle</span><span class="p">:</span> <span class="kt"><a href="../Structs/RouteHandle.html">RouteHandle</a></span><span class="p">,</span> <span class="nv">waypoints</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Waypoint.html">Waypoint</a></span><span class="p">],</span> <span class="nv">refreshRouteOptions</span><span class="p">:</span> <span class="kt"><a href="../Classes/RefreshRouteOptions.html">RefreshRouteOptions</a></span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DynamicRoutingDelegate.html">DynamicRoutingDelegate</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>routeHandle</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The route handle from the HERE routing backend.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>waypoints</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Allows to specify detailed information on the waypoints of the route.
-This parameter can be useful, when additional information needs to be
-specified besides the coordinates - as the coordinates can be retrieved
-from the contained <code><a href="../Structs/RoutePlace.html">RoutePlace</a></code> that are already contained in
-the <code><a href="../Structs/RouteHandle.html">RouteHandle</a></code> parameter.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>refreshRouteOptions</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The options for the route calculation.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>delegate</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The listener to receive the events.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:7heresdk20DynamicRoutingEngineC5start11routeHandle9waypoints14routingOptions8delegateyAA05RouteG0V_SayAA8WaypointVGAA0cJ0VAA0bC8Delegate_ptKF"></a>
                     <a name="//apple_ref/swift/Method/start(routeHandle:waypoints:routingOptions:delegate:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk20DynamicRoutingEngineC5start11routeHandle9waypoints14routingOptions8delegateyAA05RouteG0V_SayAA8WaypointVGAA0cJ0VAA0bC8Delegate_ptKF">start(routeHandle:<wbr>waypoints:<wbr>routingOptions:<wbr>delegate:<wbr>)</a>
@@ -3649,7 +3570,7 @@ as the driver is expected to be on a road.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

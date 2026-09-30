@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3404,6 +3421,10 @@ a higher visibility priority. A marker that allows overlap will always be drawn.
 Among markers that don&rsquo;t allow overlap, the one with the highest draw order has
 priority. Marker that is hidden due to overlapping with other markers is not pickable.</p>
 
+<p>If <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarkerC14isTextOptionalSbvp">MapMarker.isTextOptional</a></code> is <code>true</code>, the icon is always rendered on top of
+other icons on collision, while the text label still participates in normal collision
+detection and can be hidden. See <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarkerC14isTextOptionalSbvp">MapMarker.isTextOptional</a></code> for details.</p>
+
 <p>Defaults to <code>true</code>.</p>
 
                       </div>
@@ -3432,10 +3453,13 @@ priority. Marker that is hidden due to overlapping with other markers is not pic
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Determines if the marker can be displayed with icon and without text.
-Controls whenever <code>MapMarker</code> can be shown as icon only when <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarkerC16isOverlapAllowedSbvp">MapMarker.isOverlapAllowed</a></code>
-is <code>false</code>, has no effect otherwise. If <code>false</code> then the <code>MapMarker</code> will not appear
-when icon or text are blocked by other labels.
+Controls whether <code>MapMarker</code> can be shown as icon only. If <code>false</code>, the <code>MapMarker</code>
+will not appear when the icon or text are blocked by other labels.
 If <code>true</code>, icon will appear even if the text part is blocked by other labels.</p>
+
+<p>If <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarkerC16isOverlapAllowedSbvp">MapMarker.isOverlapAllowed</a></code> is also <code>true</code>, the icon is always rendered on top of other
+icons on collision, while the text label still participates in normal collision detection
+and can be hidden. See <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarkerC16isOverlapAllowedSbvp">MapMarker.isOverlapAllowed</a></code> for details.</p>
 
 <p>Defaults to <code>false</code>.</p>
 
@@ -3464,10 +3488,8 @@ If <code>true</code>, icon will appear even if the text part is blocked by other
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Determines if the icon can overlap other icons when <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarkerC16isOverlapAllowedSbvp">MapMarker.isOverlapAllowed</a></code> is <code>false</code>.
-When <code>true</code>, icons are always rendered on top of each other on collision;
-only the label (text) of the topmost icon is shown.
-Has no effect when <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarkerC16isOverlapAllowedSbvp">MapMarker.isOverlapAllowed</a></code> is <code>true</code>.</p>
+                        <p>When <code>true</code>, icons are always rendered on top of each other on collision;
+only the label (text) of the topmost icon is shown.</p>
 
 <p>Defaults to <code>false</code>.</p>
 
@@ -3476,7 +3498,8 @@ Has no effect when <code><a href="../Classes/MapMarker.html#/s:7heresdk9MapMarke
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isIconOverlapAllowed</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.30.0. Use `MapMarker.isOverlapAllowed` together with `MapMarker.isTextOptional` instead. Together, these properties provide the same behavior.")</span>
+<span class="kd">public</span> <span class="k">var</span> <span class="nv">isIconOverlapAllowed</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -3714,8 +3737,8 @@ A range is half open - [minimumZoomLevel, maximumZoomLevel), the given maximum v
 is not contained in the range.</p>
 
 <p>When empty (the default), the map marker is visible without map measure restrictions.
-Only <code><a href="../Structs/MapMeasureRange.html">MapMeasureRange</a></code>(s) of <code><a href="../Structs/MapMeasure/Kind.html#/s:7heresdk10MapMeasureV4KindO9zoomLevelyA2EmF">MapMeasure.Kind.zoomLevel</a></code> type are supported.
-<code><a href="../Structs/MapMeasureRange.html">MapMeasureRange</a></code>(s) of other unsupported types will be ignored.</p>
+Only <code><a href="../Structs/MapMeasureRange.html">MapMeasureRange</a></code>s of <code><a href="../Structs/MapMeasure/Kind.html#/s:7heresdk10MapMeasureV4KindO9zoomLevelyA2EmF">MapMeasure.Kind.zoomLevel</a></code> type are supported.
+<code><a href="../Structs/MapMeasureRange.html">MapMeasureRange</a></code>s of other unsupported types will be ignored.</p>
 
                       </div>
                       <div class="declaration">
@@ -3877,7 +3900,7 @@ Any ongoing animation of this marker instance will get cancelled.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

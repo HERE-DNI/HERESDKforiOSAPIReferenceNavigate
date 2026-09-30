@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -4504,6 +4521,84 @@ returns candidate suggestions sorted by relevance.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7heresdk12SearchEngineC16searchByPlaceIds14placeIdQueries12languageCode10completionAA10TaskHandle_pSayAA0fI5QueryVG_AA08LanguageL0OSgyAA0B5ErrorOSg_SayAA0fI6ResultVGSgAA15ResponseDetailsVSgtctF"></a>
+                    <a name="//apple_ref/swift/Method/searchByPlaceIds(placeIdQueries:languageCode:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk12SearchEngineC16searchByPlaceIds14placeIdQueries12languageCode10completionAA10TaskHandle_pSayAA0fI5QueryVG_AA08LanguageL0OSgyAA0B5ErrorOSg_SayAA0fI6ResultVGSgAA15ResponseDetailsVSgtctF">searchByPlaceIds(placeIdQueries:<wbr>languageCode:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Performs an asynchronous request to search for <code><a href="../Structs/PlaceIdResult.html">PlaceIdResult</a></code> instances
+based on the provided IDs and <code><a href="../Enums/LanguageCode.html">LanguageCode</a></code>.
+<strong>Note:</strong> A maximum of 50 IDs is allowed per request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">searchByPlaceIds</span><span class="p">(</span><span class="n">placeIdQueries</span> <span class="nv">queries</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a></span><span class="p">],</span> <span class="nv">languageCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/LanguageCode.html">LanguageCode</a></span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/TaskHandle.html">TaskHandle</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>queries</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The list of place ID queries to search for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>languageCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The preferred language for the search results. When unset or unsupported language is
+chosen, results will be returned in their local language.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback which receives the result on the main thread.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Handle that will be used to manipulate the execution of the task.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7heresdk12SearchEngineC15setCustomOption4name5valueAA0B5ErrorOSgSS_SStF"></a>
                     <a name="//apple_ref/swift/Method/setCustomOption(name:value:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk12SearchEngineC15setCustomOption4name5valueAA0B5ErrorOSgSS_SStF">setCustomOption(name:<wbr>value:<wbr>)</a>
@@ -4514,7 +4609,7 @@ returns candidate suggestions sorted by relevance.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets a custom option for search backend queries. This allows more control over the behavior
+                        <p>Sets a custom option for search backend queries. This allows more control over the behavior
 of the search algorithm.
 Name has the format <endpoint_name>.<option_name>, for example &ldquo;discover.show&rdquo;.
 Values can be combined for the same name by using a comma, for example &ldquo;truck,fuel&rdquo;.
@@ -4529,7 +4624,7 @@ enables retreival of truck amenities.
 <strong>Note:</strong> Only participants of the closed-alpha group can get access from HERE to use this feature,
 otherwise, a <code><a href="../Enums/SearchError.html#/s:7heresdk11SearchErrorO9forbiddenyA2CmF">SearchError.forbidden</a></code> will be propagated in callbacks.</li>
 <li>name = &ldquo;lookup.show&rdquo; or &ldquo;discover.show&rdquo; or &ldquo;autosuggest.show&rdquo; or &ldquo;browse.show&rdquo;, value = &ldquo;fuel&rdquo;
-enables retreival of fuel station details.
+enables retrieval of fuel station details.
 <strong>Note:</strong> Only participants of the closed-alpha group can get access from HERE to use this feature,
 otherwise, a <code><a href="../Enums/SearchError.html#/s:7heresdk11SearchErrorO9forbiddenyA2CmF">SearchError.forbidden</a></code> will be propagated in callbacks.</li>
 <li>name = &ldquo;lookup.show&rdquo; or &ldquo;discover.show&rdquo; or &ldquo;browse.show&rdquo;, value = &ldquo;ev&rdquo;
@@ -4550,7 +4645,10 @@ otherwise, a <code><a href="../Enums/SearchError.html#/s:7heresdk11SearchErrorO2
 enables balanced distribution of results for search in <code><a href="../Structs/GeoCorridor.html">GeoCorridor</a></code>.
 Constraint: using this parameter when searching an area that is not a <code><a href="../Structs/GeoCorridor.html">GeoCorridor</a></code> generates
 an error <code><a href="../Enums/SearchError.html#/s:7heresdk11SearchErrorO10badRequestyA2CmF">SearchError.badRequest</a></code>.
-<strong>Note:</strong> It is recommended to use <code><a href="../Structs/SearchOptions.html#/s:7heresdk13SearchOptionsV18distributedResultsSbvp">SearchOptions.distributedResults</a></code> instead.
+<strong>Note:</strong> It is recommended to use <code><a href="../Structs/SearchOptions.html#/s:7heresdk13SearchOptionsV18distributedResultsSbvp">SearchOptions.distributedResults</a></code> instead.</li>
+<li>name = &ldquo;lookup.show&rdquo; or &ldquo;discover.show&rdquo; or &ldquo;autosuggest.show&rdquo; or &ldquo;browse.show&rdquo;, value = &ldquo;streetInfo&rdquo;
+enables retrieval of street name details.
+<strong>Note:</strong> Not supported in OfflineSearchEngine (only available for the Navigate license).
 For a complete list of available endpoints, parameter names and their valid values, refer to
 <a href="https://docs.here.com/geocoding-and-search/docs/construct-a-here-batch-api-v7-request">HERE Geocoding &amp; Search API v7</a>.
 <strong>Note:</strong> It&rsquo;s easy to set a wrong option that makes queries invalid,
@@ -4657,7 +4755,7 @@ Related APIs may change for new releases without a deprecation process.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3153,167 +3170,6 @@ can already be changed before a map view instance is created.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk18MapContentSettingsC33configureVehicleRestrictionFilter13transportMode19truckSpecifications18hazardousMaterials14tunnelCategoryyAA09TransportJ0O_AA05TruckL0VSayAA17HazardousMaterialOGSgAA06TunnelP0OSgtFZ"></a>
-                    <a name="//apple_ref/swift/Method/configureVehicleRestrictionFilter(transportMode:truckSpecifications:hazardousMaterials:tunnelCategory:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk18MapContentSettingsC33configureVehicleRestrictionFilter13transportMode19truckSpecifications18hazardousMaterials14tunnelCategoryyAA09TransportJ0O_AA05TruckL0VSayAA17HazardousMaterialOGSgAA06TunnelP0OSgtFZ">configureVehicleRestrictionFilter(transportMode:<wbr>truckSpecifications:<wbr>hazardousMaterials:<wbr>tunnelCategory:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Configure a filter for <code><a href="../Structs/MapFeatures.html#/s:7heresdk11MapFeaturesV19vehicleRestrictionsSSvpZ">MapFeatures.vehicleRestrictions</a></code> to show only the restrictions
-matching the specified criteria when the feature is enabled.</p>
-<h1 id='filtering-rules-for-truck-specifications' class='heading'>Filtering rules for truck specifications</h1>
-
-<p>Only restrictions applicable to the supplied truck specifications will be shown.</p>
-
-<p>Examples:</p>
-
-<ul>
-<li>If the height in <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).truckSpecifications</code> is set to 200 cm, then height restrictions
-with a height greater than 200 cm will not be displayed.</li>
-<li>If the trailer count in <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).truckSpecifications</code> is set to 2, then trailer
-restrictions for a count greater than 2 will not be displayed.</li>
-</ul>
-<h1 id='filtering-rules-for-hazardous-materials' class='heading'>Filtering rules for hazardous materials</h1>
-
-<p>Only restrictions applicable to specified hazardous materials will be shown.
-If at least one hazardous material of any type is present in the list, all available
-tunnel category restrictions will be displayed. In order to filter-out non-applicable
-tunnel categories, a tunnel category, that applies to the vehicle, can be specified
-additionally.</p>
-
-<p>Examples:</p>
-
-<ul>
-<li>If the <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).hazardousMaterials</code> contains <code><a href="../Enums/HazardousMaterial.html#/s:7heresdk17HazardousMaterialO6poisonyA2CmF">HazardousMaterial.poison</a></code>
-and <code><a href="../Enums/HazardousMaterial.html#/s:7heresdk17HazardousMaterialO3gasyA2CmF">HazardousMaterial.gas</a></code>, then only material restrictions
-for poison and gas will be displayed.</li>
-<li>If the <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).hazardousMaterials</code> list is empty, then no material restrictions
-will be shown.</li>
-<li>If the <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).hazardousMaterials</code> list is not supplied at all (is <code>nil</code>), then
-no material restrictions will be shown.</li>
-<li>If the <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).hazardousMaterials</code> contains at least one hazardous material of any
-type and <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).tunnelCategory</code> is <code>nil</code>, then only corresponding material
-restrictions will be displayed together with all available tunnel categories.</li>
-</ul>
-<h1 id='filtering-rules-for-tunnel-category' class='heading'>Filtering rules for tunnel category</h1>
-
-<p>Tunnel categories are labeled and rated based on the level of restriction they provide.
-The lowest level of restriction is <code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1byA2CmF">TunnelCategory.b</a></code>, the highest and most
-restrictive one is <code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1eyA2CmF">TunnelCategory.e</a></code>.</p>
-
-<p>Specifying tunnel category means that:</p>
-
-<ul>
-<li>The truck carries goods which could cause only the additional dangerous effects
-described in specified tunnel category and other categories below it with lower level
-of restriction.</li>
-<li>The truck does not carry goods that could cause the dangerous effects described in
-tunnel categories above with higher restriction levels than the one specified.</li>
-</ul>
-
-<p>Tunnel categories are closely related to hazardous materials.</p>
-
-<p>Since the type of hazardous material alone does not define the exact level of danger,
-to ensure comprehensive coverage; the HERE SDK follows:</p>
-
-<ul>
-<li>If at least one hazardous material is specified but no <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).tunnelCategory</code> is provided,
-the SDK enables and displays <strong>all tunnel category restrictions</strong> to ensure that no relevant
-restrictions are omitted.</li>
-<li>If both hazardous materials and a <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).tunnelCategory</code> are specified, the SDK
-<strong>strictly follows the given tunnel category parameter</strong> and displays only the
-applicable restrictions.</li>
-</ul>
-
-<p>Example:
-If <code>MapContentSettings.configureVehicleRestrictionFilter(TransportMode, TruckSpecifications, [HazardousMaterial]?, TunnelCategory?).tunnelCategory</code> is set to <code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1dyA2CmF">TunnelCategory.d</a></code>, then restrictions for
-tunnel category <code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1eyA2CmF">TunnelCategory.e</a></code> and <code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1dyA2CmF">TunnelCategory.d</a></code>
-will be displayed, but not the categories <code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1byA2CmF">TunnelCategory.b</a></code> and
-<code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1cyA2CmF">TunnelCategory.c</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.28.0, use `MapContentSettings.configureVehicleRestrictionFilter(TransportSpecification﹚` instead.")</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">configureVehicleRestrictionFilter</span><span class="p">(</span><span class="nv">transportMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/TransportMode.html">TransportMode</a></span><span class="p">,</span> <span class="nv">truckSpecifications</span><span class="p">:</span> <span class="kt"><a href="../Structs/TruckSpecifications.html">TruckSpecifications</a></span><span class="p">,</span> <span class="nv">hazardousMaterials</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HazardousMaterial.html">HazardousMaterial</a></span><span class="p">]?,</span> <span class="nv">tunnelCategory</span><span class="p">:</span> <span class="kt"><a href="../Enums/TunnelCategory.html">TunnelCategory</a></span><span class="p">?)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>transportMode</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Specifies the current transport type. Currently, it&rsquo;s used to distinguish
-between truck and other transport modes. This distinction ensures consistency
-between the routing logic and the information displayed on the map.
-At present, this is primarily used to suppress the generic truck restriction icon.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>truckSpecifications</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The size, weight, type and trailer count specifications to filter for, so that only
-restrictions which are relevant for the given specifications are displayed.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>hazardousMaterials</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The hazardous materials to filter for, so that only applicable restrictions are
-displayed. When the list is <code>nil</code> or empty, then no material restrictions
-will be displayed.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>tunnelCategory</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The tunnel category to filter for, so that only applicable restrictions are
-displayed. If <code>nil</code>, then no tunnel category restrictions will be
-displayed.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:7heresdk18MapContentSettingsC33configureVehicleRestrictionFilter14transportSpecsyAA22TransportSpecificationV_tFZ"></a>
                     <a name="//apple_ref/swift/Method/configureVehicleRestrictionFilter(transportSpecs:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk18MapContentSettingsC33configureVehicleRestrictionFilter14transportSpecsyAA22TransportSpecificationV_tFZ">configureVehicleRestrictionFilter(transportSpecs:<wbr>)</a>
@@ -3333,7 +3189,7 @@ transport configuration for both routing and map rendering, ensuring consistency
 route calculation and the restrictions displayed on the map.</p>
 
 <p>The method extracts the transport mode, vehicle specifications, hazardous materials, and
-tunnel category from the <code>MapContentSettings.configureVehicleRestrictionFilter(TransportSpecification).transportSpecs</code> parameter and applies filtering according to
+tunnel category from the <code>MapContentSettings.configureVehicleRestrictionFilter(...).transportSpecs</code> parameter and applies filtering according to
 the same rules described below.</p>
 <h1 id='filtering-rules-for-transport-mode' class='heading'>Filtering rules for transport mode</h1>
 
@@ -3363,7 +3219,7 @@ restrictions for a count greater than 2 will not be displayed.</li>
 
 <p>Only restrictions applicable to specified hazardous materials will be shown.
 Hazardous materials are specified within the <code><a href="../Structs/VehicleSpecification.html">VehicleSpecification</a></code>
-contained in the <code>MapContentSettings.configureVehicleRestrictionFilter(TransportSpecification).transportSpecs</code> parameter.</p>
+contained in the <code>MapContentSettings.configureVehicleRestrictionFilter(...).transportSpecs</code> parameter.</p>
 
 <p>If at least one hazardous material of any type is present in the list, all available
 tunnel category restrictions will be displayed. In order to filter-out non-applicable
@@ -3391,7 +3247,7 @@ The lowest level of restriction is <code><a href="../Enums/TunnelCategory.html#/
 restrictive one is <code><a href="../Enums/TunnelCategory.html#/s:7heresdk14TunnelCategoryO1eyA2CmF">TunnelCategory.e</a></code>.</p>
 
 <p>The tunnel category is specified within the <code><a href="../Structs/VehicleSpecification.html">VehicleSpecification</a></code>
-contained in the <code>MapContentSettings.configureVehicleRestrictionFilter(TransportSpecification).transportSpecs</code> parameter.</p>
+contained in the <code>MapContentSettings.configureVehicleRestrictionFilter(...).transportSpecs</code> parameter.</p>
 
 <p>Specifying tunnel category means that:</p>
 
@@ -3862,7 +3718,7 @@ validity time and the refresh period derived from the refresh period of the traf
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

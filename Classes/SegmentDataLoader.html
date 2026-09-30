@@ -1237,6 +1237,15 @@
                 <a href="../Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1392,9 +1401,6 @@
                 <a href="../Structs/CarOptions.html">CarOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Routing.html#/s:7heresdk37CalculateIndoorRouteCompletionHandlera">CalculateIndoorRouteCompletionHandler</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Routing.html#/s:7heresdk33CalculateIsolineCompletionHandlera">CalculateIsolineCompletionHandler</a>
               </li>
               <li class="nav-group-task">
@@ -1531,12 +1537,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/IndoorRoutingError.html">IndoorRoutingError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/IndoorRoutingError/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/IndoorSectionDetails.html">IndoorSectionDetails</a>
@@ -2569,10 +2569,16 @@
                 <a href="../Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -3051,13 +3057,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Other%20Classes.html">Other Classes</a>
+            <a href="../Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="../Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -3069,6 +3072,20 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalSegmentId.html">LocalSegmentId</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -3088,7 +3105,7 @@
                 </div>
               </div>
             <p>Provides the protocol for the access to the
-segments data available in the local OCM map. Please be aware that the methods within this class
+segments data available in the local map. Please be aware that the methods within this class
 load map data synchronously. In the event of absent data in the disk cache, the data will be
 retrieved from the remote server. To mitigate the potential freezing of the calling thread,
 it is advisable to proactively prefetch map data around the working area.</p>
@@ -3213,7 +3230,8 @@ Returns an empty list in case no segments could be found around the coordinates.
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getSegmentsAroundCoordinates</span><span class="p">(</span><span class="n">_</span> <span class="nv">coordinates</span><span class="p">:</span> <span class="kt"><a href="../Structs/GeoCoordinates.html">GeoCoordinates</a></span><span class="p">,</span> <span class="nv">radiusInMeters</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/OCMSegmentId.html">OCMSegmentId</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.30.0. Use `getLocalSegmentsAroundCoordinates(﹚` instead.")</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getSegmentsAroundCoordinates</span><span class="p">(</span><span class="n">_</span> <span class="nv">coordinates</span><span class="p">:</span> <span class="kt"><a href="../Structs/GeoCoordinates.html">GeoCoordinates</a></span><span class="p">,</span> <span class="nv">radiusInMeters</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/OCMSegmentId.html">OCMSegmentId</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -3230,6 +3248,76 @@ Returns an empty list in case no segments could be found around the coordinates.
                               <td>
                                 <div>
                                   <p>The location to explore</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radiusInMeters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The radius of the search. Only values between 1m and 5000m are accepted.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The list of segments around the given position. The segments are sorted by distance
+from the point.
+Throws if it&rsquo;s not possible to return list of a list of segments.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk17SegmentDataLoaderC33getLocalSegmentsAroundCoordinates_14radiusInMetersSayAA0fB2IdVGAA03GeoI0V_SdtKF"></a>
+                    <a name="//apple_ref/swift/Method/getLocalSegmentsAroundCoordinates(_:radiusInMeters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk17SegmentDataLoaderC33getLocalSegmentsAroundCoordinates_14radiusInMetersSayAA0fB2IdVGAA03GeoI0V_SdtKF">getLocalSegmentsAroundCoordinates(_:<wbr>radiusInMeters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the local segments around a certain coordinates.
+Returns an empty list in case no segments could be found around the coordinates.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../MapData.html#/s:7heresdk18MapDataLoaderErrora">MapDataLoaderError</a></code> Specifies reason, why list of a list of segments is not returned.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getLocalSegmentsAroundCoordinates</span><span class="p">(</span><span class="n">_</span> <span class="nv">coordinates</span><span class="p">:</span> <span class="kt"><a href="../Structs/GeoCoordinates.html">GeoCoordinates</a></span><span class="p">,</span> <span class="nv">radiusInMeters</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/LocalSegmentId.html">LocalSegmentId</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coordinates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location to explore.</p>
                                 </div>
                               </td>
                             </tr>
@@ -3282,7 +3370,8 @@ Throws if it&rsquo;s not possible to return list of a list of segments.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadData</span><span class="p">(</span><span class="nv">segment</span><span class="p">:</span> <span class="kt"><a href="../Structs/OCMSegmentId.html">OCMSegmentId</a></span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/SegmentDataLoaderOptions.html">SegmentDataLoaderOptions</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SegmentData.html">SegmentData</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.30.0. Use `loadLocalData` with `LocalSegmentId` instead.")</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadData</span><span class="p">(</span><span class="nv">segment</span><span class="p">:</span> <span class="kt"><a href="../Structs/OCMSegmentId.html">OCMSegmentId</a></span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/SegmentDataLoaderOptions.html">SegmentDataLoaderOptions</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SegmentData.html">SegmentData</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3327,6 +3416,73 @@ Throws if it&rsquo;s not possible to return list of a list of segments.</p>
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:7heresdk17SegmentDataLoaderC09loadLocalC07segment7optionsAA0bC0CAA0fB2IdV_AA0bcD7OptionsVtKF"></a>
+                    <a name="//apple_ref/swift/Method/loadLocalData(segment:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk17SegmentDataLoaderC09loadLocalC07segment7optionsAA0bC0CAA0fB2IdV_AA0bcD7OptionsVtKF">loadLocalData(segment:<wbr>options:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Synchronously load the data for the given map segment.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../MapData.html#/s:7heresdk18MapDataLoaderErrora">MapDataLoaderError</a></code> Specifies reason, why list of data of a segment is not returned.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadLocalData</span><span class="p">(</span><span class="nv">segment</span><span class="p">:</span> <span class="kt"><a href="../Structs/LocalSegmentId.html">LocalSegmentId</a></span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/SegmentDataLoaderOptions.html">SegmentDataLoaderOptions</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SegmentData.html">SegmentData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>segment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The segment to load.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Request options.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Requested data of a segment.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:7heresdk17SegmentDataLoaderC012loadDirectedbC07segment7optionsAA0bC0CAA0F12OCMSegmentIdV_AA0bcD7OptionsVtKF"></a>
                     <a name="//apple_ref/swift/Method/loadDirectedSegmentData(segment:options:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk17SegmentDataLoaderC012loadDirectedbC07segment7optionsAA0bC0CAA0F12OCMSegmentIdV_AA0bcD7OptionsVtKF">loadDirectedSegmentData(segment:<wbr>options:<wbr>)</a>
@@ -3349,7 +3505,8 @@ Throws if it&rsquo;s not possible to return list of a list of segments.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadDirectedSegmentData</span><span class="p">(</span><span class="nv">segment</span><span class="p">:</span> <span class="kt"><a href="../Structs/DirectedOCMSegmentId.html">DirectedOCMSegmentId</a></span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/SegmentDataLoaderOptions.html">SegmentDataLoaderOptions</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SegmentData.html">SegmentData</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.30.0. Use `load_directed_local_segment_data(﹚` instead.")</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadDirectedSegmentData</span><span class="p">(</span><span class="nv">segment</span><span class="p">:</span> <span class="kt"><a href="../Structs/DirectedOCMSegmentId.html">DirectedOCMSegmentId</a></span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/SegmentDataLoaderOptions.html">SegmentDataLoaderOptions</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SegmentData.html">SegmentData</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3378,6 +3535,73 @@ Throws if it&rsquo;s not possible to return list of a list of segments.</p>
                               <td>
                                 <div>
                                   <p>Request options</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Requested data of a segment.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk17SegmentDataLoaderC017loadDirectedLocalbC07segment7optionsAA0bC0CAA0fgB2IdV_AA0bcD7OptionsVtKF"></a>
+                    <a name="//apple_ref/swift/Method/loadDirectedLocalSegmentData(segment:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk17SegmentDataLoaderC017loadDirectedLocalbC07segment7optionsAA0bC0CAA0fgB2IdV_AA0bcD7OptionsVtKF">loadDirectedLocalSegmentData(segment:<wbr>options:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Synchronously load the data for the given map directed segment.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../MapData.html#/s:7heresdk18MapDataLoaderErrora">MapDataLoaderError</a></code> Specifies reason, why list of data of a segment is not returned.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">loadDirectedLocalSegmentData</span><span class="p">(</span><span class="nv">segment</span><span class="p">:</span> <span class="kt"><a href="../Structs/DirectedLocalSegmentId.html">DirectedLocalSegmentId</a></span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Structs/SegmentDataLoaderOptions.html">SegmentDataLoaderOptions</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/SegmentData.html">SegmentData</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>segment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The directed segment to load.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Request options.</p>
                                 </div>
                               </td>
                             </tr>
@@ -3463,7 +3687,7 @@ Throws if it&rsquo;s not possible to return list of a list of segments.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
