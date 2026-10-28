@@ -2,7 +2,7 @@
   "warnings": [
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/core-types/swift/unity/swift/core-types_main_glue.swift",
-      "line": 3860,
+      "line": 3982,
       "symbol": "Point3D.init(x:y:z:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -23,42 +23,42 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/harp.sdk-bindings/swift/unity/swift/harp.sdk-bindings_main_glue.swift",
-      "line": 17745,
+      "line": 19795,
       "symbol": "MapSceneLights.Direction.init(azimuth:altitude:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 1755,
+      "line": 1662,
       "symbol": "ExternalID.init(source:id:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 4034,
+      "line": 3755,
       "symbol": "PolylineSimplifier.Options.init(maxPoints:simplificationToleranceInMeters:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 7200,
+      "line": 6830,
       "symbol": "EngineOptions.init(customBaseUrl:customAuthenticationMode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_core-bindings/swift/unity/swift/heresdk_core-bindings_main_glue.swift",
-      "line": 14303,
+      "line": 13736,
       "symbol": "VehicleRestriction.init(restriction:hazmatRestriction:timeRestriction:appliesToDelivery:weather:truckCategory:trailerCount:axleCount:axleCountInGroup:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_mapview-harp-bindings/swift/unity/swift/heresdk_mapview-harp-bindings_main_glue.swift",
-      "line": 3448,
+      "line": 3482,
       "symbol": "PickMapContentResult.VehicleRestrictionResult.init(coordinates:countryCode:vehicleRestriction:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -72,21 +72,21 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5340,
+      "line": 4864,
       "symbol": "ChargingConnectorType.Key.rawValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5345,
+      "line": 4869,
       "symbol": "ChargingConnectorType.CodingError.unknownValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_search-common-bindings/swift/unity/swift/heresdk_search-common-bindings_main_glue.swift",
-      "line": 4152,
+      "line": 4151,
       "symbol": "Address.init(city:countryCode:country:district:subdistrict:houseNumOrName:postalCode:state:county:street:intersectionStreets:block:subBlock:addressText:type:stateCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
